@@ -94,7 +94,7 @@ class TimeLayerLoader {
 	let conditions = [];
     let styles;
     let i;
-	
+	// Change "ABRJ" to your attribute for date of demolition and "BAUJ" for building date
 	conditions.push([		
 		`Number(\${attributes.ABRJ}) <= ${currYear}||Number(\${attributes.BAUJ}) > ${currYear} `,
 		`color('white', 0)`,
@@ -124,7 +124,7 @@ class TimeLayerLoader {
 	});
 	
 	
-	
+	//Change "AGB" to your Layername of shown buildings
 	const layer = this.app.maps.layerCollection.getByKey('AGB');
 	
     if (!layer) {
