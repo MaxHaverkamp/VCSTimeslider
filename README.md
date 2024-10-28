@@ -9,7 +9,7 @@ Das Plugin ist (bisher) ohne Config-Editor, daher müssen die Attribut und Layer
 
     1. In Timeslider.vue
       - im Slider selbst den min und max Wert auf den eigenen Wunschwert stellen
-      - ebenfalls im Skript-Part das Start- und Endjahr angeben
+      - ebenfalls im Skript-Part das Start- und Endjahr, sowie aktuelles Jahr (currYear) angeben
 
     2. In TimeLayerLoader.js
       - Attributnamen des Baujahres und des Abrissjahres
