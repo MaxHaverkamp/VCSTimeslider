@@ -12,8 +12,8 @@
 	
 		 <v-slider
             v-model="selectedYear"
-            :max="2030"
-            :min="1899"
+            :max="3000" 
+            :min="-3000"
             :step="1"
             thumb-label="always"
             @change="setStyle"
@@ -152,9 +152,9 @@
        
         isMoving: false,
         selectedLayer: '',        
-        selectedYear: 1899,
-		min:1899,
-		max:2030,
+        selectedYear: -3000,
+		min:-3000,
+		max:3000,
 		step:1,
 		speed: 1000,
 		plan: false,
