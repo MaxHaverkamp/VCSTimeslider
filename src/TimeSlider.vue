@@ -8,13 +8,7 @@
         </template>
         <template v-else>    
 		<br>
-		
-	
-		
-
-		 
-		 
-		
+		<br>
 	
 		 <v-slider
             v-model="selectedYear"
