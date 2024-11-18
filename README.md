@@ -1,19 +1,25 @@
 # Timeslider
 > Part of the [VC Map Project](https://github.com/virtualcitySYSTEMS/map-ui)
 
-Ein simples Zeitrafferplugin für VC Map Version 5.
+A simplistic timeslider plugin to be used in VC Map Version 5.
 
-![image](https://github.com/user-attachments/assets/9709cc08-d6aa-4eea-b4c9-2202fc7ba788)
-
-Das Plugin ist (bisher) ohne Config-Editor, daher müssen die Attribut und Layernamen im Plugin selbst angepasst werden:
-
-    1. In Timeslider.vue
-      - im Slider selbst den min und max Wert auf den eigenen Wunschwert stellen
-      - ebenfalls im Skript-Part das Start- und Endjahr, sowie aktuelles Jahr (currYear) angeben
-
-    2. In TimeLayerLoader.js
-      - Attributnamen des Baujahres und des Abrissjahres
-      - Layername
+![image](https://github.com/user-attachments/assets/364528e8-c591-494e-af2a-0ee074d7c39d)
 
 
-      
+There is no config-editor implemented so far, so attribute and layer names have to be manually adjusted in the code:
+
+    1. In ../src/Timeslider.vue
+        - in template:
+              - adjust min (starting year) and max (end year) values in v-slider
+        - in script:
+              - adjust min and max values (start and end year again) as well as selectedYear (starting/current value)      
+
+    2. In ../src/TimeLayerLoader.js
+        - in setStyle()
+              - attributes.ABRJ and attributes.BAUJ to your corresponding attributes 
+                  ABRJ=demolition daten
+                  BAUJ=building date
+              - layername of AGB to your layername (which contains all buildings)
+
+
+If you have any questions regarding the plugin, feel free to contact me at MHaverkamp@GEOCONSULT-GmbH.de     
