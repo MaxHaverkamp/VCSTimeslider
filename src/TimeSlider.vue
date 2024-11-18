@@ -131,9 +131,9 @@
 	created() {
       const timeLayerLoader = TimeLayerLoader.getInstance();
       this.layerNames = timeLayerLoader.layerNames;
-      this.selectedYear = 1899;
-	  this.min=1899;
-	  this.max=2030;
+      this.selectedYear = -3000;
+	  this.min=-3000;
+	  this.max=3000;
 	  this.step=1;
 	  this.speed=1000;
 	  this.setStyle();
